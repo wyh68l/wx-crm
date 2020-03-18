@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>圆形进度条</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #30353b;
+        }
+        .wrap{
+            width: 100upx;
+            height: 100upx;
+            position: relative;
+            /*background-color: #5d6570;*/
+            border: 1upx solid #E8E8E8;
+            box-sizing: border-box;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .circle,.percent{
+            position: absolute;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .circle{
+            width: 100upx;
+            height: 100upx;
+            /*border: 40px solid #5d6570;*/
+            clip:rect(0,100upx,100upx,50upx);
+        }
+        .clip-auto{
+            clip:rect(auto, auto, auto, auto);
+        }
+        .percent{
+            width: 100upx;
+            height: 100upx;
+            box-sizing: border-box;
+            top:-2upx;
+            left:-2upx;
+        }
+        .left{
+            transition:transform ease;
+            border:20upx solid #FFA133;
+            clip: rect(0,50upx,100upx,0);
+        }
+        .right{
+            border:20upx solid #FFA133;
+            clip: rect(0,100upx,100upx,50upx);
+        }
+        .wth0{
+            width:0;
+        }
+    </style>
+    <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+</head>
+<body>
+<div class="wrap" data-value="0.25">
+    <div class="circle">
+        <div class="percent left"></div>
+        <div class="percent right wth0"></div>
+    </div>
+    <div class="num"><span class="num-count">0</span>%</div>
+</div>
+</body>
+<script>
+    $('.wrap').each(function(){
+        var percent = $(this).data('value'),
+            $circle = $(this).find('.circle'),
+            $left = $(this).find('.left'),
+            $right = $(this).find('.right'),
+            $numCount = $(this).find('.num-count'),
+            count = 0;
+
+        percent = ((!percent || percent> 1 )? 0 : percent*100);
+        var timer = setInterval(function(){
+            if(count > percent){
+                clearInterval(timer);
+                return false;
+            }else if(count>50){
+                $circle.addClass('clip-auto');
+                $right.removeClass('wth0');
+            }
+
+            $left.css("-webkit-transform","rotate("+(18/5)*count+"deg)");
+            $numCount.text(percent);
+            count++;
+        },10);
+    });
+</script>
+</html>

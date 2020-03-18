@@ -1,0 +1,14 @@
+{
+  "extEnable": true,
+  "extAppid": "wx1c06c4e49bf6040e",
+  "ext": {
+    "jumpAppId": "wx2c8e93c1caec51d3",
+    "jumpName": "",
+    "companyKey": "one-stand",
+    "uploadUrl": "http://api.jiauniverse.cn",
+    "baseUrl": "http://api.jiauniverse.cn",
+    "wssUrl": "ws://socket.jiauniverse.cn/ws",
+      "headImg":"http://wx.qlogo.cn/mmopen/jj4e65x0Px2FquE7ztzFwGLR6YGWwrTPeJUTvcvOGibVibahVM4vzPo4FrEQNd5eHf0diaSsdwpjv5KcjJR2jD46yWy6Aon4CG5/0",
+    "ossUrl": "https://you-one-stand.oss-cn-shanghai.aliyuncs.com/"
+  }
+}

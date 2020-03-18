@@ -1,0 +1,269 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/main"
+    },
+    {
+      "path": "pages/IM/main"
+    },
+    {
+      "path": "pages/enterprise/main"
+    },
+    {
+      "path": "pages/articleDetail/main"
+    },
+    {
+      "path": "pages/webSiteControl/main"
+    },
+    {
+      "path": "pages/companyIntro/main"
+    },
+    {
+      "path": "pages/client/main"
+    },
+    {
+      "path": "pages/editLog/main"
+    },
+    {
+      "path": "pages/clientAdd/main"
+    },
+    {
+      "path": "pages/tabsEdit/main"
+    },
+    {
+      "path": "pages/wxLogin/main",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/editEnterprise/main"
+    },
+    {
+      "path": "pages/chooseProfession/main"
+    },
+    {
+      "path": "pages/mine/main"
+    },
+    {
+      "path": "pages/showBill/main"
+    },
+    {
+      "path": "pages/clientDetail/main"
+    },
+    {
+      "path": "pages/customerAnalysis/main"
+    },
+    {
+      "path": "pages/msg/main"
+    },
+    {
+      "path": "pages/editCard/main",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/companyAddr/main"
+    },
+    {
+      "path": "pages/chooseCity/main"
+    },
+    {
+      "path": "pages/followLog/main"
+    },
+    {
+      "path": "pages/chooseAddr/main"
+    },
+    {
+      "path": "pages/orderLists/main"
+    },
+    {
+      "path": "pages/companyInvite/main"
+    },
+    {
+      "path": "pages/webSiteMsg/main"
+    },
+    {
+      "path": "pages/cardCode/main"
+    },
+    {
+      "path": "pages/searchChooseItem/main"
+    },
+    {
+      "path": "pages/orderDetail/main"
+    },
+    {
+      "path": "pages/inputMoney/main"
+    },
+    {
+      "path": "pages/chooseCompany/main"
+    },
+    {
+      "path": "pages/companyVideos/main",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/editCompanyVideo/main",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/chooseIdentity/main"
+    },
+    {
+      "path": "pages/shareCard/main"
+    },
+    {
+      "path": "pages/videoExhibition/main",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/editVideoExhibition/main",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/companyPack/",
+      "pages": [
+        {
+          "path": "productControl/main"
+        },
+        {
+          "path": "classifyControl/main"
+        },
+        {
+          "path": "prodDetail/main"
+        },
+        {
+          "path": "dynamicControl/main"
+        },
+        {
+          "path": "dynamicIssue/main"
+        },
+        {
+          "path": "dynamicDetail/main"
+        },
+        {
+          "path": "member/main"
+        },
+        {
+          "path": "memberAnalyze/main"
+        },
+        {
+          "path": "financialStatistics/main",
+          "style": {
+            "navigationBarTitleText": "财务统计"
+          }
+        },
+        {
+          "path": "joinUs/main"
+        },
+        {
+          "path": "inviteEdit/main"
+        },
+        {
+          "path": "inviteDetail/main"
+        },
+        {
+          "path": "appointmentManage/main"
+        },
+        {
+          "path": "appointmentList/main"
+        },
+        {
+          "path": "appointmentProdControl/main"
+        },
+        {
+          "path": "appointmentClassifyControl/main"
+        },
+        {
+          "path": "appointmentProdDetail/main"
+        }
+      ]
+    },
+    {
+      "root": "pages/frequentPack/",
+      "pages": [
+        {
+          "path": "frequent/main"
+        },
+        {
+          "path": "statements/main"
+        },
+        {
+          "path": "commonPhrases/main"
+        },
+        {
+          "path": "addPhrases/main",
+          "style": {
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "超级CRM",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#A8A8A8",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#00a0e9",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "雷达",
+        "pagePath": "pages/index/main",
+        "iconPath": "./static/tabs/radar.png",
+        "selectedIconPath": "./static/tabs/radar-active.png"
+      },
+      {
+        "text": "企业",
+        "pagePath": "pages/enterprise/main",
+        "iconPath": "./static/tabs/company.png",
+        "selectedIconPath": "./static/tabs/company-active.png"
+      },
+      {
+        "text": "客户",
+        "pagePath": "pages/client/main",
+        "iconPath": "./static/tabs/client.png",
+        "selectedIconPath": "./static/tabs/client-active.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/msg/main",
+        "iconPath": "./static/tabs/msg.png",
+        "selectedIconPath": "./static/tabs/msg-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/main",
+        "iconPath": "./static/tabs/user.png",
+        "selectedIconPath": "./static/tabs/user-active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于展示您所在的城市"
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx2c8e93c1caec51d3"
+  ]
+}
